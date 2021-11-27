@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-27T22:45:10Z" name="Default suite" finished-at="2021-11-27T22:45:29Z" duration-ms="19792">
+    <groups>
+    </groups>
+    <test started-at="2021-11-27T22:45:10Z" name="Default test" finished-at="2021-11-27T22:45:29Z" duration-ms="19792">
+      <class name="com.automation.testcases.HomePageTests">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:09Z" name="setUpSuite" finished-at="2021-11-27T22:45:10Z" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:10Z" name="setUp" finished-at="2021-11-27T22:45:16Z" duration-ms="6547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Login_Successful(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:16Z" name="verify_Login_Successful" data-provider="getData" finished-at="2021-11-27T22:45:19Z" duration-ms="2630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[elsa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[elsalinda]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Successful -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:19Z" name="TearDown" finished-at="2021-11-27T22:45:20Z" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:20Z" name="setUp" finished-at="2021-11-27T22:45:26Z" duration-ms="6562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_Login_Successful(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:26Z" name="verify_Login_Successful" data-provider="getData" finished-at="2021-11-27T22:45:29Z" duration-ms="2642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ajackson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Successful -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.automation.testcases.HomePageTests@6e005dc9]" started-at="2021-11-27T22:45:29Z" name="TearDown" finished-at="2021-11-27T22:45:29Z" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.automation.testcases.HomePageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
