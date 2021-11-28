@@ -1,4 +1,4 @@
-package com.automation.testcases;
+package com.automation.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,9 +14,8 @@ public class HomePageTests extends BasePage {
 
 		HomePage homePage = new HomePage(driver);
 		Assert.assertTrue(homePage.verifyIsPageLoaded(homePage.heading_CustomerLogin));
-
+		
 		AccountServicesPage accountServicesPage = homePage.doLogin(userName, password, driver);
 		Assert.assertTrue(accountServicesPage.verifyIsPageLoaded(accountServicesPage.heading_AccountServices));
 	}
-
 }

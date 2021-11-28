@@ -7,21 +7,27 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 
 import com.automation.utilities.BrowserRetriever;
+import com.automation.utilities.ConfigurationDataProvider;
 import com.automation.utilities.ExcelDataProvider;
 
 public class BasePage {
 
 	public WebDriver driver;
 	ExcelDataProvider excelDataProvider;
+	public ConfigurationDataProvider configurationDataProvider;
 
 	@BeforeSuite
 	public void setUpSuite() {
+		configurationDataProvider = new ConfigurationDataProvider();
 		excelDataProvider = new ExcelDataProvider();
 	}
 
 	@BeforeMethod
 	public void setUp() {
-		driver = BrowserRetriever.initiateBrowser(driver, "edge", "https://parabank.parasoft.com/parabank/index.htm");
+		
+		// No need to pass driver object and initialize again to driver
+		driver = BrowserRetriever.initiateBrowser(driver, configurationDataProvider.getBrowser(),
+				configurationDataProvider.getURL());
 	}
 
 	@DataProvider
