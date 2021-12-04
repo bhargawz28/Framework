@@ -1,5 +1,7 @@
 package com.automation.pages;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,7 +16,9 @@ public class BasePage {
 
 	public WebDriver driver;
 	ExcelDataProvider excelDataProvider;
-	public ConfigurationDataProvider configurationDataProvider;
+	ConfigurationDataProvider configurationDataProvider;
+	public static String testCaseName;
+	Method method;
 
 	@BeforeSuite
 	public void setUpSuite() {
@@ -24,24 +28,26 @@ public class BasePage {
 
 	@BeforeMethod
 	public void setUp() {
-		
+
 		// No need to pass driver object and initialize again to driver
 		driver = BrowserRetriever.initiateBrowser(driver, configurationDataProvider.getBrowser(),
 				configurationDataProvider.getURL());
 	}
 
 	@DataProvider
-	public String[][] getData() {
+	public String[][] getData(Method method) {
 
-		int testCaseCount = excelDataProvider.getRowCount("verify_Login_Successful");
-		int testDataCount = excelDataProvider.getCellCount("verify_Login_Successful", 1);
+		testCaseName = method.getName();
+
+		int testCaseCount = excelDataProvider.getRowCount(testCaseName);
+		int testDataCount = excelDataProvider.getCellCount(testCaseName, 1);
 
 		String testCaseData[][] = new String[testCaseCount][testDataCount];
 
 		for (int testCaseIterationId = 1; testCaseIterationId <= testCaseCount; testCaseIterationId++) {
 			for (int testDataParameterId = 0; testDataParameterId < testDataCount; testDataParameterId++) {
-				testCaseData[testCaseIterationId - 1][testDataParameterId] = excelDataProvider
-						.getCellData("verify_Login_Successful", testCaseIterationId, testDataParameterId);
+				testCaseData[testCaseIterationId - 1][testDataParameterId] = excelDataProvider.getCellData(testCaseName,
+						testCaseIterationId, testDataParameterId);
 			}
 		}
 		return testCaseData;

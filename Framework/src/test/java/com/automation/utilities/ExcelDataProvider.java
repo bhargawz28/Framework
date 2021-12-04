@@ -14,7 +14,7 @@ public class ExcelDataProvider {
 
 	public ExcelDataProvider() {
 
-		File sourceFile = new File("./TestData/Data.xlsx");
+		File sourceFile = new File(System.getProperty("user.dir") + "/TestData/Data.xlsx");
 		try {
 			FileInputStream fileInputStream = new FileInputStream(sourceFile);
 			workBook = new XSSFWorkbook(fileInputStream);
