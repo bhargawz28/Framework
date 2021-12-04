@@ -12,7 +12,10 @@ import org.openqa.selenium.io.FileHandler;
 import com.automation.pages.BasePage;
 
 public class Helpers {
-
+	
+	/*
+	 * 
+	 */
 	public static void captrueScreenshot(WebDriver driver) {
 		TakesScreenshot takesScreenshot = ((TakesScreenshot) driver);
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
