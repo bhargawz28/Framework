@@ -13,8 +13,8 @@ import com.automation.pages.BasePage;
 
 public class Helpers {
 	
-	/*
-	 *This method is capture screenshot 
+	/**
+	 * @param driver
 	 */
 	public static void captrueScreenshot(WebDriver driver) {
 		TakesScreenshot takesScreenshot = ((TakesScreenshot) driver);
@@ -27,7 +27,11 @@ public class Helpers {
 			System.out.println("Unable to capture screenshot" + e.getMessage());
 		}
 	}
-
+	
+	
+	/**
+	 * @return
+	 */
 	public static String getCurrentDateAndTime() {
 		Date date = new Date();
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd_MM_yyyy_HH_mm_ss");
