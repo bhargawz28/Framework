@@ -14,7 +14,7 @@ import com.automation.pages.BasePage;
 public class Helpers {
 	
 	/*
-	 * 
+	 *This method is capture screenshot 
 	 */
 	public static void captrueScreenshot(WebDriver driver) {
 		TakesScreenshot takesScreenshot = ((TakesScreenshot) driver);
