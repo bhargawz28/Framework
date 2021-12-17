@@ -5,7 +5,7 @@
     <classes>
       <class name="com.automation.tests.HomePageTests">
         <methods>
-          <include name="verify_Login_Successful" invocation-numbers="0 1"/>
+          <include name="verify_Login_Successful"/>
           <include name="TearDown"/>
           <include name="setUpSuite"/>
           <include name="setUp"/>
