@@ -24,7 +24,10 @@ public class HomePage {
 	public WebElement input_Password;
 
 	@FindBy(xpath = "//input[@value='Log In']")
-	public WebElement btn_LogIn;
+	public WebElement button_LogIn;
+
+	@FindBy(xpath = "//a[contains(@href,'register')]")
+	public WebElement link_Register;
 
 	public boolean verifyIsPageLoaded(WebElement webElement) {
 		boolean elementExists = false;
@@ -42,14 +45,30 @@ public class HomePage {
 	}
 
 	public void clickLogin() {
-		btn_LogIn.click();
+		button_LogIn.click();
+	}
+
+	public void clickRegister() {
+		link_Register.click();
 	}
 
 	// Services
+	
+	/*
+	 * 
+	 */
 	public AccountServicesPage doLogin(String userName, String password, WebDriver driver) {
 		enterUserName(userName);
 		enterPassword(password);
 		clickLogin();
 		return new AccountServicesPage(driver);
+	}
+	
+	/*
+	 * 
+	 */
+	public RegistrationPage clickOnRegister(WebDriver driver) {
+		clickRegister();
+		return new RegistrationPage(driver);
 	}
 }

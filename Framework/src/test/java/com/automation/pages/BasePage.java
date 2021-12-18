@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -45,7 +46,6 @@ public class BasePage {
 
 	@BeforeMethod
 	public void setUp() {
-
 		// No need to pass driver object and initialize again to driver
 		driver = BrowserRetriever.initiateBrowser(driver, configurationDataProvider.getBrowser(),
 				configurationDataProvider.getURL());
@@ -63,6 +63,7 @@ public class BasePage {
 
 		for (int testCaseIterationId = 1; testCaseIterationId <= testCaseCount; testCaseIterationId++) {
 			for (int testDataParameterId = 0; testDataParameterId < testDataCount; testDataParameterId++) {
+				
 				testCaseData[testCaseIterationId - 1][testDataParameterId] = excelDataProvider.getCellData(testCaseName,
 						testCaseIterationId, testDataParameterId);
 			}

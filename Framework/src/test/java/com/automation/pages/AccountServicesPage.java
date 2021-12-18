@@ -33,11 +33,17 @@ public class AccountServicesPage {
 			throw new NoSuchElementException("WebElement is not displayed on the Window");
 		return elementExists;
 	}
-
+	
+	/*
+	 * 
+	 */
 	public void clickOnOpenNewAccount() {
 		lnk_OpenNewAccount.click();
 	}
 	
+	/*
+	 * 
+	 */
 	public OpenNewAccount navigateToNewAccount(WebDriver driver) {
 		clickOnOpenNewAccount();
 		return new OpenNewAccount(driver);

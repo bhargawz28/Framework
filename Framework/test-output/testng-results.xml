@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-17T20:52:46Z" name="Default suite" finished-at="2021-12-17T20:53:07Z" duration-ms="21149">
+  <suite started-at="2021-12-18T23:45:56 IST" name="Default suite" finished-at="2021-12-18T23:46:17 IST" duration-ms="20547">
     <groups>
     </groups>
-    <test started-at="2021-12-17T20:52:46Z" name="Default test" finished-at="2021-12-17T20:53:07Z" duration-ms="21149">
+    <test started-at="2021-12-18T23:45:56 IST" name="Default test" finished-at="2021-12-18T23:46:17 IST" duration-ms="20547">
       <class name="com.automation.tests.HomePageTests">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:52:45Z" name="setUpSuite" finished-at="2021-12-17T20:52:46Z" duration-ms="918" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:45:55 IST" name="setUpSuite" finished-at="2021-12-18T23:45:56 IST" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:52:46Z" name="setUp" finished-at="2021-12-17T20:52:53Z" duration-ms="7119" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:45:56 IST" name="setUp" finished-at="2021-12-18T23:46:04 IST" duration-ms="7310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_Login_Successful(java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:52:53Z" name="verify_Login_Successful" data-provider="getData" finished-at="2021-12-17T20:52:54Z" duration-ms="1532" status="PASS">
+        <test-method signature="verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:04 IST" name="verify_Login_Successful" data-provider="getData" finished-at="2021-12-18T23:46:07 IST" duration-ms="2879" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,22 +31,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Successful -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:52:54Z" name="TearDown" finished-at="2021-12-17T20:52:56Z" duration-ms="1311" status="PASS">
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:07 IST" name="TearDown" finished-at="2021-12-18T23:46:08 IST" duration-ms="1594" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Login_Successful status=SUCCESS method=HomePageTests.verify_Login_Successful(java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@609db546] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Login_Successful status=SUCCESS method=HomePageTests.verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:52:56Z" name="setUp" finished-at="2021-12-17T20:53:03Z" duration-ms="7272" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:08 IST" name="setUp" finished-at="2021-12-18T23:46:14 IST" duration-ms="5642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_Login_Successful(java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:53:03Z" name="verify_Login_Successful" data-provider="getData" finished-at="2021-12-17T20:53:06Z" duration-ms="3206" status="PASS">
+        <test-method signature="verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:14 IST" name="verify_Login_Successful" data-provider="getData" finished-at="2021-12-18T23:46:16 IST" duration-ms="1868" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,11 +62,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Successful -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTests@609db546]" started-at="2021-12-17T20:53:06Z" name="TearDown" finished-at="2021-12-17T20:53:07Z" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:16 IST" name="TearDown" finished-at="2021-12-18T23:46:17 IST" duration-ms="1184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Login_Successful status=SUCCESS method=HomePageTests.verify_Login_Successful(java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@609db546] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Login_Successful status=SUCCESS method=HomePageTests.verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16] output={null}]]]>
               </value>
             </param>
           </params>
