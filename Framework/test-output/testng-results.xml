@@ -1,79 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-18T23:45:56 IST" name="Default suite" finished-at="2021-12-18T23:46:17 IST" duration-ms="20547">
+  <suite started-at="2022-01-03T00:46:16 IST" name="Default suite" finished-at="2022-01-03T00:46:31 IST" duration-ms="14663">
     <groups>
     </groups>
-    <test started-at="2021-12-18T23:45:56 IST" name="Default test" finished-at="2021-12-18T23:46:17 IST" duration-ms="20547">
-      <class name="com.automation.tests.HomePageTests">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:45:55 IST" name="setUpSuite" finished-at="2021-12-18T23:45:56 IST" duration-ms="1128" status="PASS">
+    <test started-at="2022-01-03T00:46:16 IST" name="Default test" finished-at="2022-01-03T00:46:31 IST" duration-ms="14663">
+      <class name="com.automation.tests.RegistrationTests">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.tests.RegistrationTests@72f926e6]" started-at="2022-01-03T00:46:15 IST" name="setUpSuite" finished-at="2022-01-03T00:46:16 IST" duration-ms="823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:45:56 IST" name="setUp" finished-at="2021-12-18T23:46:04 IST" duration-ms="7310" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.RegistrationTests@72f926e6]" started-at="2022-01-03T00:46:16 IST" name="setUp" finished-at="2022-01-03T00:46:25 IST" duration-ms="8461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:04 IST" name="verify_Login_Successful" data-provider="getData" finished-at="2021-12-18T23:46:07 IST" duration-ms="2879" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[elsa]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[elsalinda]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verify_Registration_Successful()[pri:0, instance:com.automation.tests.RegistrationTests@72f926e6]" started-at="2022-01-03T00:46:25 IST" name="verify_Registration_Successful" finished-at="2022-01-03T00:46:30 IST" duration-ms="5130" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Login_Successful -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:07 IST" name="TearDown" finished-at="2021-12-18T23:46:08 IST" duration-ms="1594" status="PASS">
+        </test-method> <!-- verify_Registration_Successful -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.RegistrationTests@72f926e6]" started-at="2022-01-03T00:46:30 IST" name="TearDown" finished-at="2022-01-03T00:46:31 IST" duration-ms="1026" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Login_Successful status=SUCCESS method=HomePageTests.verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Registration_Successful status=SUCCESS method=RegistrationTests.verify_Registration_Successful()[pri:0, instance:com.automation.tests.RegistrationTests@72f926e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:08 IST" name="setUp" finished-at="2021-12-18T23:46:14 IST" duration-ms="5642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:14 IST" name="verify_Login_Successful" data-provider="getData" finished-at="2021-12-18T23:46:16 IST" duration-ms="1868" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[alan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ajackson]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Successful -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16]" started-at="2021-12-18T23:46:16 IST" name="TearDown" finished-at="2021-12-18T23:46:17 IST" duration-ms="1184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Login_Successful status=SUCCESS method=HomePageTests.verify_Login_Successful(java.lang.String,java.lang.String)[pri:0, instance:com.automation.tests.HomePageTests@383bfa16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.automation.tests.HomePageTests -->
+      </class> <!-- com.automation.tests.RegistrationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
